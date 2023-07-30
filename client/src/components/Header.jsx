@@ -4,21 +4,41 @@ import logo from '../asets/images/logoC.png'
 import PL from '../asets/images/PL.png'
 import UK from '../asets/images/UK.png'
 import { useNavigate } from "react-router-dom";
-const Headr = () =>{
+import { useLocation } from 'react-router-dom'
+const Headr = ({getLanguage,setLanguage}) =>{
     const navigate=useNavigate();
 
+    let aboutUs = getLanguage === "PL" ? "O NAS" : "ABOUT US";
+    let contact = getLanguage === "PL" ? "kontakt" : "contact";
+
+    let location = useLocation();
+
+    console.log("location",location)
+
+    const handlePL = () =>{
+        setLanguage("PL")
+        const url  = location.pathname.replace("Eng","");
+        console.log("url",url);
+        navigate(`${url}`)
+    }
+    const handleEng = () => {
+        setLanguage("ENG")
+        const url  = location.pathname.includes("Eng")? location.pathname : (location.pathname+"Eng");
+        console.log("url",url);
+        navigate(`${url}`)
+    }
 
     return(
         <HeadrContainr>
-            <div className="side left" onClick={(e)=>{navigate('/')}}>
+            <div className="side left" onClick={(e)=>{getLanguage === "PL" ? navigate('/') : navigate('/Eng')}}>
                 <img alt="logo" src={logo} style={{height:"15vh"}} />
                 <h1>Nazwa firmy</h1>
             </div>
             <div className="side right">
-                <div className="header-paragraf" onClick={(e)=>{navigate('/aboutUs')}}>O NAS</div>
-                <div className="header-paragraf" onClick={(e)=>{navigate('/contact')}}>kontakt</div>
-                <img alt="flag" src={PL} className="header-fleg"/>
-                <img alt="flag" src={UK} className="header-fleg"/>
+                <div className="header-paragraf" onClick={(e)=>{getLanguage === "PL" ? navigate('/aboutUs') : navigate('/aboutUsEng')}}>{aboutUs}</div>
+                <div className="header-paragraf" onClick={(e)=>{getLanguage === "PL" ? navigate('/contact') : navigate('/contactEng')}}>{contact}</div>
+                <img alt="flag" src={PL} className="header-fleg" onClick={(e)=>{handlePL()}}/>
+                <img alt="flag" src={UK} className="header-fleg" onClick={(e)=>{handleEng()}}/>
             </div>
         </HeadrContainr>
     )

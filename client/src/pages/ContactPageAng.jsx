@@ -1,27 +1,26 @@
 import React from "react";
 import styled from 'styled-components'
-const ContactPage = () =>{
-
+const ContactPageAng = () =>{
     return(
         <ContactContainer>
             <div className="border-contact">
                 <div className="part left">
                     <div className="foundors">
                         <div className="title-contact-div">
-                            Zalożyciele
+                        Founders
                         </div>
                         <div className="foundors-cnotent">
                             <div>
                                 <h2>Mikołaj Golowski</h2>
-                                <p>Linkedin: <a href="https://pl.linkedin.com/in/miko%C5%82aj-golowski-a26939208">Zobacz profil</a></p>
+                                <p>Linkedin: <a href="https://pl.linkedin.com/in/miko%C5%82aj-golowski-a26939208">View profile</a></p>
                             </div>
                             <div>
                                 <h2>Antoni Pochopień</h2>
-                                <p>Linkedin: <a href="https://pl.linkedin.com/in/antoni-pochopie%C5%84-2033601b9">Zobacz profil</a></p>
+                                <p>Linkedin: <a href="https://pl.linkedin.com/in/antoni-pochopie%C5%84-2033601b9">View profile</a></p>
                             </div>
                             <div>
                                 <h2>Maciej Kijowski</h2>
-                                <p>Linkedin: <a href="https://pl.linkedin.com/in/maciej-kijowski-392708260">Zobacz profil</a> </p>
+                                <p>Linkedin: <a href="https://pl.linkedin.com/in/maciej-kijowski-392708260">View profile</a> </p>
                             </div>
                         </div>
                     </div>
@@ -29,7 +28,7 @@ const ContactPage = () =>{
                 <div className="part right">
                     <div className="foundors">
                         <div className="title-contact-div">
-                            Kontakt
+                            Contact
                         </div>
                         <div className="foundors-cnotent">
                             <div>
@@ -37,7 +36,7 @@ const ContactPage = () =>{
                                 <p>mailfirmowy@raz2trzy.com </p>
                             </div>
                             <div>
-                                <h2>Nr. kontaktowy:</h2>
+                                <h2>Phone:</h2>
                                 <p>+48 792 727 370 </p>
                             </div>
                         </div>
@@ -48,7 +47,7 @@ const ContactPage = () =>{
     )
 }
 
-export default ContactPage;
+export default ContactPageAng;
 
 const ContactContainer = styled.div`
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;600&family=Tinos:ital@0;1&display=swap');

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import landingPageIcon from "../asets/images/landing_page_icon.png"
 import "../style/style.scss"
 import { useNavigate } from "react-router-dom";
-const StartPage = () =>{
+const StartPageAng = () =>{
     const navigate=useNavigate();
 
     return(
@@ -12,8 +12,8 @@ const StartPage = () =>{
                 <div className="left-side side">
                     <div className="landing-cytat">
                         <h1>Nazea firmy</h1>
-                        <p>Marzysz o solidnej marce w internecie? My jesteśmy Twoim kluczem do sukcesu! Nasza firma specjalizuje się w tworzeniu wymarzonych stron internetowych, które stanowią fundament dla Twojej marki online.</p>
-                        <button className="btn" onClick={(e)=>{navigate('/aboutUs')}}>Zaczynamy</button>
+                        <p>Dreaming of a strong online presence? We are your key to success! Our company specializes in creating dream websites that serve as the foundation for your online brand.</p>
+                        <button className="btn" onClick={(e)=>{navigate('/aboutUs')}}>Let's begin!</button>
                     </div>
                 </div>
                 <div className="right-side side">
@@ -26,16 +26,16 @@ const StartPage = () =>{
                 </div>
                 <div className="right-side side">
                     <div className="landing-cytat">
-                        <h1>Pomagamy w rozwoju</h1>
-                        <p>Współpraca z nami to gwarancja, że Twoja aplikacja będzie zgodna z najnowszymi standardami i będzie gotowa sprostać wymaganiom przyszłości. Nasza wiedza i doświadczenie pozwalają nam unikać pułapek, które mogą czyhać na mniej doświadczonych.</p>
+                        <h1>We help in development</h1>
+                        <p>Collaborating with us ensures that your application will comply with the latest standards and be ready to meet future requirements. Our knowledge and experience allow us to avoid pitfalls that less experienced developers might encounter.</p>
                     </div>
                 </div>
             </div>
             <div className="Segment third">
                 <div className="right-side side">
                     <div className="landing-cytat">
-                        <h1>Łączy nas pasja</h1>
-                        <p>Jesteśmy zespołem pasjonatów, dla których praca to nie tylko obowiązek, ale również radość i spełnienie. Tworzymy aplikacje internetowe, które łączą w sobie doskonały design, zaawansowaną technologię i przemyślany użytkownikowy interfejs.</p>
+                        <h1>Passion unites us</h1>
+                        <p>We are a team of enthusiasts for whom work is not just a duty but also joy and fulfillment. We create web applications that combine perfect design, advanced technology, and a thoughtful user interface.</p>
                     </div>
                 </div>
                 <div className="left-side side imgHolder">
@@ -48,8 +48,8 @@ const StartPage = () =>{
                 </div>
                 <div className="right-side side">
                     <div className="landing-cytat">
-                        <h1>Jesteśmy wszechstronni</h1>
-                        <p>Otwórz swoje drzwi do sukcesu dzięki naszym kompleksowym aplikacjom internetowym i mobilnym! Nasza firma specjalizuje się w tworzeniu zaawansowanych rozwiązań, które kompleksowo pozwalają Ci zdobywać nowych klientów i rozwijać swój biznes.</p>
+                        <h1>We are versatile</h1>
+                        <p>Open your doors to success with our comprehensive web and mobile applications! Our company specializes in creating advanced solutions that comprehensively allow you to attract new customers and grow your business..</p>
                     </div>
                 </div>
             </div>
@@ -58,7 +58,7 @@ const StartPage = () =>{
     )
 }
 
-export default StartPage;
+export default StartPageAng;
 
 const StartPageContainr = styled.div`
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap');

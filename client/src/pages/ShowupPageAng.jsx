@@ -20,12 +20,12 @@ const videos = {
     video4: sky,
   };
 
-const ShowupPage = () => {
+const ShowupPageAng = () => {
     const content = {
-        rozoj:"Rozwijamy świat, bo rozwijamy się sami! Nasza firma to zapaleni pasją specjaliści, dla których rozwój jest jednocześnie celem i drogą. Wszystko, co robimy, wynika z naszej autentycznej pasji do tego, co tworzymy.",
-        organizacja:"Nasz zespół to zgrana ekipa ekspertów, którzy są najlepsi w swoich dziedzinach. Jesteśmy programistami, projektantami, marketingowcami, analitykami i wieloma innymi specjalistami, którzy łączą siły, aby osiągnąć wyjątkowe wyniki.",
-        stabilniosc:"Stabilność, która tworzy różnicę! Nasza firma jest nie tylko o rozwijaniu się, ale również o budowaniu trwałych relacji z naszymi klientami. Każdy klient jest dla nas wyjątkowy, dlatego podchodzimy do każdego indywidualnie, zapewniając pełne wsparcie i dostosowanie do Twoich potrzeb.",
-        zaufanie:"Nasza firma to miejsce, gdzie pasja spotyka się z zaangażowaniem, a pomysłowość współgra z determinacją. Wierzymy, że kluczem do sukcesu jest nieustanne dążenie do doskonałości i odkrywanie nowych możliwości.",
+        rozoj:"We are advancing the world because we are constantly advancing ourselves! Our company consists of passionate specialists for whom growth is both the goal and the path. Everything we do stems from our genuine passion for what we create.",
+        organizacja:"Our team is a cohesive group of experts who are the best in their respective fields. We are programmers, designers, marketers, analysts, and many other specialists, who come together to achieve exceptional results.",
+        stabilniosc:"Stability that makes a difference! Our company is not only about growth but also about building lasting relationships with our clients. Each client is unique to us, and that's why we approach each one individually, providing full support and customization to meet your needs.",
+        zaufanie:"Our company is a place where passion meets commitment, and creativity harmonizes with determination. We believe that the key to success is a constant pursuit of excellence and the exploration of new possibilities.",
     }
     const [selectedVideo, setSelectedVideo] = React.useState('video1');
     const [getText, setText] = React.useState(content.zaufanie);
@@ -62,30 +62,25 @@ const ShowupPage = () => {
                     <div className="box">               
                         <div className="main-part">
                             <div className="propozytion" onClick={()=>handleChangeBacground("video1",content.rozoj)}>
-                                    <SlideTemplate img={gears} title="Rozwój" />
+                                    <SlideTemplate img={gears} title="Development" />
                             </div>
                             <div className="propozytion" onClick={()=>handleChangeBacground("video2",content.organizacja)}>
-                                <SlideTemplate img={latarnia} title="Organizacja"/>
+                                <SlideTemplate img={latarnia} title="Organization"/>
                             </div>
                             <div className="propozytion" onClick={()=>handleChangeBacground("video3",content.stabilniosc)}>
-                                    <SlideTemplate img={anchor} title="Stabilność" />
+                                    <SlideTemplate img={anchor} title="Stability" />
                             </div>
                             <div className="propozytion" onClick={()=>handleChangeBacground("video4",content.zaufanie)} >
-                                    <SlideTemplate img={piorko} title="Zaufanie"/>
+                                    <SlideTemplate img={piorko} title="Trust"/>
                             </div>
                         </div>
                     </div>
-
             </div>
-            {/* <div className="Segment">
-
-            </div> */}
-
     </ShowupContainer>
     )
 }
 
-export default ShowupPage;
+export default ShowupPageAng;
 
 const ShowupContainer = styled.div` 
 /* z-index: -100; */
