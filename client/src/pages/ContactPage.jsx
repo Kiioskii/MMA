@@ -34,7 +34,7 @@ const ContactPage = () =>{
                         <div className="foundors-cnotent">
                             <div>
                                 <h2>Email:</h2>
-                                <p>mailfirmowy@raz2trzy.com </p>
+                                <p>contact@aspinaweb.com</p>
                             </div>
                             <div>
                                 <h2>Nr. kontaktowy:</h2>

@@ -32,7 +32,7 @@ const Headr = ({getLanguage,setLanguage}) =>{
         <HeadrContainr>
             <div className="side left" onClick={(e)=>{getLanguage === "PL" ? navigate('/') : navigate('/Eng')}}>
                 <img alt="logo" src={logo} style={{height:"15vh"}} />
-                <h1>Nazwa firmy</h1>
+                <h1>ASPINA</h1>
             </div>
             <div className="side right">
                 <div className="header-paragraf" onClick={(e)=>{getLanguage === "PL" ? navigate('/aboutUs') : navigate('/aboutUsEng')}}>{aboutUs}</div>

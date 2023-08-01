@@ -11,7 +11,7 @@ const StartPage = () =>{
             <div className="Segment first">
                 <div className="left-side side">
                     <div className="landing-cytat">
-                        <h1>Nazea firmy</h1>
+                        <h1>ASPINA-WEB</h1>
                         <p>Marzysz o solidnej marce w internecie? My jesteśmy Twoim kluczem do sukcesu! Nasza firma specjalizuje się w tworzeniu wymarzonych stron internetowych, które stanowią fundament dla Twojej marki online.</p>
                         <button className="btn" onClick={(e)=>{navigate('/aboutUs')}}>Zaczynamy</button>
                     </div>
