@@ -42,7 +42,7 @@ flex-direction: row;
 .left{
     width: 30%;
     h1{
-        font-size: 2vw ;
+        font-size: 1.4rem ;
     }
     div{
         display: flex;
@@ -61,13 +61,56 @@ flex-direction: row;
     flex-direction: column;
     margin-right: 2vw;
     h1{
-        font-size: 2vw ;
+        font-size: 1.4rem ;
     }
+    p{
+        margin: 0;
+        margin-right: 2vw;
+        font-size: 1rem;
+    }
+}
+@media (min-width: 1080px) and (max-width: 1536px)  {
+        
+    h1{
+        font-size: 2rem ;
+    }
+    p{
+        font-size: 1rem;
+    }
+}
+    @media (min-width: 640px) and (max-width: 1079px)  {
+        .side{
+            width: 50vw;
+        }
+        h1{
+        font-size: 3rem ;
+         }
+        p{
+            font-size: 1.1rem;
+        }
+    }
+    @media screen and (max-width: 640px)  {
+        .side{
+            width: 50vw;
+        }
+        h1{
+        font-size: 1rem ;
+        }
         p{
             margin: 0;
             margin-right: 2vw;
-            font-size: 1vw;
-
+            font-size: 0.8rem;
         }
-}
+        .right{
+            h1{
+                font-size: 1.4rem ;
+            }
+            p{
+                margin: 0;
+                margin-right: 2vw;
+                font-size: 1rem;
+            }
+        }
+       
+    }
 `

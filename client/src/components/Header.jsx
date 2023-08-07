@@ -31,7 +31,7 @@ const Headr = ({getLanguage,setLanguage}) =>{
     return(
         <HeadrContainr>
             <div className="side left" onClick={(e)=>{getLanguage === "PL" ? navigate('/') : navigate('/Eng')}}>
-                <img alt="logo" src={logo} style={{height:"15vh"}} />
+                <img alt="logo" src={logo} className="headerLogo" />
                 <h1>ASPINA</h1>
             </div>
             <div className="side right">
@@ -50,6 +50,7 @@ const HeadrContainr = styled.div`
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;600&family=Tinos:ital@0;1&display=swap');
 width: 100%;
 height: 10vh;
+overflow-x: unset;
 /* border: 2px solid red; */
 display: flex;
 flex-direction: row;
@@ -79,8 +80,10 @@ margin-top: -10vh;
     width: 25vw;
     cursor: pointer;
 }
+.headerLogo{
+    height: 15vh;
+}
 .header-paragraf{
-    /* font-family: 'Tinos';    */
     width: 10vw;
     display: flex;
     text-align: center;
@@ -92,7 +95,7 @@ margin-top: -10vh;
     transition: ease-in-out;
     transition: 1000ms;
     cursor: pointer;
-    font-size: 1.3vw;
+    font-size: 1.3vw
 }
 .header-paragraf:hover{
     background-color: #00000066;
@@ -100,10 +103,71 @@ margin-top: -10vh;
     .header-fleg{
         height: 90%;
         cursor: pointer;
-        margin-right: 10px;
+        margin-right: 5px;
+        margin-left: 5px;
     }
     .header-fleg:hover{
         background-color: #00000034;
         transition: ease-in-out;
     }
+
+    @media (min-width: 1080px) and (max-width: 1536px)  {
+        
+        .headerLogo{
+            width:8vw;
+        }
+        .header-fleg{
+            width: 5rem;
+        }
+    }
+    @media  (min-width: 640px) and (max-width: 1079px)  {
+
+        .right{
+            width: 50vw;
+        }
+
+        .left{
+            width: 40vw;
+            h1{
+                font-size: 1rem;
+            }
+        }
+        
+        .headerLogo{
+            width:15vw;
+        }
+        .header-fleg{
+            width: 5rem;
+        }
+        .header-paragraf{
+            font-size: 1rem;
+            width: 20vw;
+        }
+    }
+    @media screen and (max-width: 640px)  {
+        
+        .right{
+            width: 60vw;
+        }
+
+        .left{
+            width: 30vw;
+            h1{
+                font-size: 0.8rem;
+            }
+        }
+        
+        .headerLogo{
+            width:20vw;
+        }
+        .header-fleg{
+            width: 3rem;
+        }
+        .header-paragraf{
+            font-size: 0.7rem;
+            width: 15vw;
+        }
+    }
+
+
 `
