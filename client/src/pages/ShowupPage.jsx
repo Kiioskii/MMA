@@ -89,11 +89,12 @@ export default ShowupPage;
 
 const ShowupContainer = styled.div` 
 /* z-index: -100; */
-    overflow-x: hidden;
-    overflow-y: unset;  
+    overflow-x: hidden !important;
+    overflow-y: unset !important;  
+    scroll-behavior: unset;
     background-color: #2e2e2e;
-    width: 100vw;
-    height: 100vh;
+    width: 100vw !important;
+    height: 100vh !important;
     overflow-x: unset;
     margin: 0;
     /* border: 2px solid red; */
@@ -220,15 +221,69 @@ const ShowupContainer = styled.div`
         .videoBCG{
             width: auto;
             height: auto;
+            overflow-y: unset;
+        overflow-x: unset;
         }
+        overflow-y: unset;
+        overflow-x: unset;
+        scroll-behavior: unset;
 
     }
-    @media (min-aspect-ratio: 16/9){
-        .videoBCG{
-            width: 100%;
-            height: auto;
-        }
-        
+    
+    @media (min-width: 1080px) and (max-width: 1536px)  {
+        overflow-y: unset;
+        overflow-x: unset;
+
     }
+    @media  (min-width: 640px) and (max-width: 1079px)  {
+        .box{
+
+        top: 95vh;
+        right: 5vw;
+        width: 80%;
+        height: 31vh;
+        z-index: 2;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+    }
+    .text-div{
+        width: 50vw;
+        height: 40vh;
+        top: 40vh;
+        left: 5vw;
+        z-index: 20;
+        font-size: 0.7rem;
+        line-height: 3vh;
+        letter-spacing: 2px;
+    }
+
+    }
+    @media  (max-width: 640px)  {
+        .box{
+            top: 95vh;
+            right: 5vw;
+            width: 90%;
+            height: 31vh;
+            z-index: 2;
+            padding-left: 2vw;
+            padding-right: 2vw;
+            padding-top: 3vh;
+            padding-bottom: 3vh;
+        }
+        .text-div{
+        width: 60vw;
+        height: 40vh;
+        top: 40vh;
+        left: 5vw;
+        z-index: 20;
+        font-size: 0.7rem;
+        line-height: 3vh;
+        letter-spacing: 2px;
+    }
+
+    }
+
 
 `
