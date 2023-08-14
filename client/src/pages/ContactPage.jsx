@@ -34,7 +34,7 @@ const ContactPage = () =>{
                         <div className="foundors-cnotent">
                             <div>
                                 <h2>Email:</h2>
-                                <p>contact@aspinaweb.com</p>
+                                <p>contact@aspinatech.com</p>
                             </div>
                             <div>
                                 <h2>Nr. kontaktowy:</h2>
@@ -145,19 +145,19 @@ box-shadow: 14px 13px 24px 3px rgba(66, 68, 90, 1);
         }
        
     }
-    @media screen and (max-width: 640px)  {
+    @media (max-width: 640px)  {
         .border-contact{
             flex-direction: column;
         }
         .left{
             border: none;
         }
-        .part{
+        .part{  
             width: 100%;
             height: 50%;
         }
         .title-contact-div{
-            font-size: 1.3rem;
+            font-size: 1.8rem;
             margin: 0;
             padding: 0;
             height: auto;
@@ -175,10 +175,10 @@ box-shadow: 14px 13px 24px 3px rgba(66, 68, 90, 1);
                     height: 8vh;
                     width: 70%;
                     h2{
-                        font-size: 1rem;
+                        font-size: 1.5rem;
                     }
                     p{
-                        font-size: 0.7rem;
+                        font-size: 1rem;
                     }
                 }
         }

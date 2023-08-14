@@ -7,7 +7,7 @@ import latarnia from "../asets/images/latarniaC.png"
 import gears from "../asets/images/gearsC.png"
 import SlideTemplate from "../components/SlideTemplate"; 
 import sky from "../asets/video/sky.mp4"
-import ocean from "../asets/video/ocean.mp4"
+import boat from "../asets/video/boat.mp4"
 import lake from "../asets/video/lake.mp4"
 import city from "../asets/video/city.mp4"
 import "../style/video.css"
@@ -16,7 +16,7 @@ import { CSSTransition } from 'react-transition-group';
 const videos = {
     video1: city,
     video2: lake,
-    video3: ocean,
+    video3: boat,
     video4: sky,
   };
 
@@ -77,9 +77,6 @@ const ShowupPage = () => {
                     </div>
 
             </div>
-            {/* <div className="Segment">
-
-            </div> */}
 
     </ShowupContainer>
     )
@@ -140,6 +137,7 @@ const ShowupContainer = styled.div`
     .main-part{
         display: flex;
         flex-direction: row;
+        justify-content: center;
         gap: 2vw;
         width: 100%;
         height: 100%;
@@ -263,9 +261,9 @@ const ShowupContainer = styled.div`
     @media  (max-width: 640px)  {
         .box{
             top: 95vh;
-            right: 5vw;
-            width: 90%;
-            height: 31vh;
+            right: 2vw;
+            width: 95%;
+            height: 15vh;
             z-index: 2;
             padding-left: 2vw;
             padding-right: 2vw;
@@ -281,7 +279,24 @@ const ShowupContainer = styled.div`
         font-size: 0.7rem;
         line-height: 3vh;
         letter-spacing: 2px;
-    }
+        }
+        .propozytion{
+            width: 5rem;
+            height: 5rem;
+            border-radius: 100%;
+
+        }
+        .slideTitle{
+            opacity: 0;
+        }
+        .slideContentInner{
+            display: none;
+        }
+        .slideContent {
+            width: 7rem;
+            height: 4rem;
+        }
+
 
     }
 

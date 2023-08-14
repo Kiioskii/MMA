@@ -33,7 +33,7 @@ const ContactPageAng = () =>{
                         <div className="foundors-cnotent">
                             <div>
                                 <h2>Email:</h2>
-                                <p>mailfirmowy@raz2trzy.com </p>
+                                <p>contact@aspinatech.com </p>
                             </div>
                             <div>
                                 <h2>Phone:</h2>
@@ -119,4 +119,69 @@ box-shadow: 14px 13px 24px 3px rgba(66, 68, 90, 1);
         }
     }
 }
+
+    @media  (min-width: 640px) and (max-width: 1079px)  {
+
+        
+        .foundors-cnotent{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                div{
+                    width: 70%;
+                    h2{
+                        font-size: 1rem;
+                    }
+                    p{
+                        font-size: 0.7rem;
+                    }
+                }
+        }
+        .title-contact-div{
+            font-size: 2rem;
+        }
+       
+    }
+    @media (max-width: 640px)  {
+        .border-contact{
+            flex-direction: column;
+        }
+        .left{
+            border: none;
+        }
+        .part{
+            width: 100%;
+            height: 50%;
+        }
+        .title-contact-div{
+            font-size: 1.8rem;
+            margin: 0;
+            padding: 0;
+            height: auto;
+            margin-bottom: 2vh;
+        }
+
+        .foundors-cnotent{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: auto;
+                div{
+                    height: 8vh;
+                    width: 70%;
+                    h2{
+                        font-size: 1.5rem;
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+        }
+        
+      
+    }
 `

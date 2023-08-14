@@ -7,7 +7,7 @@ import latarnia from "../asets/images/latarniaC.png"
 import gears from "../asets/images/gearsC.png"
 import SlideTemplate from "../components/SlideTemplate"; 
 import sky from "../asets/video/sky.mp4"
-import ocean from "../asets/video/ocean.mp4"
+import boat from "../asets/video/boat.mp4"
 import lake from "../asets/video/lake.mp4"
 import city from "../asets/video/city.mp4"
 import "../style/video.css"
@@ -16,7 +16,7 @@ import { CSSTransition } from 'react-transition-group';
 const videos = {
     video1: city,
     video2: lake,
-    video3: ocean,
+    video3: boat,
     video4: sky,
   };
 
@@ -134,6 +134,7 @@ const ShowupContainer = styled.div`
     .main-part{
         display: flex;
         flex-direction: row;
+        justify-content: center;
         gap: 2vw;
         width: 100%;
         height: 100%;
@@ -215,15 +216,86 @@ const ShowupContainer = styled.div`
         .videoBCG{
             width: auto;
             height: auto;
+            overflow-y: unset;
+        overflow-x: unset;
+        }
+        overflow-y: unset;
+        overflow-x: unset;
+        scroll-behavior: unset;
+
+    }
+    
+    @media (min-width: 1080px) and (max-width: 1536px)  {
+        overflow-y: unset;
+        overflow-x: unset;
+
+    }
+    @media  (min-width: 640px) and (max-width: 1079px)  {
+        .box{
+
+        top: 95vh;
+        right: 5vw;
+        width: 80%;
+        height: 31vh;
+        z-index: 2;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+    }
+    .text-div{
+        width: 50vw;
+        height: 40vh;
+        top: 40vh;
+        left: 5vw;
+        z-index: 20;
+        font-size: 0.7rem;
+        line-height: 3vh;
+        letter-spacing: 2px;
+    }
+
+    }
+    @media  (max-width: 640px)  {
+        .box{
+            top: 95vh;
+            right: 2vw;
+            width: 95%;
+            height: 15vh;
+            z-index: 2;
+            padding-left: 2vw;
+            padding-right: 2vw;
+            padding-top: 3vh;
+            padding-bottom: 3vh;
+        }
+        .text-div{
+        width: 60vw;
+        height: 40vh;
+        top: 40vh;
+        left: 5vw;
+        z-index: 20;
+        font-size: 0.7rem;
+        line-height: 3vh;
+        letter-spacing: 2px;
+        }
+        .propozytion{
+            width: 5rem;
+            height: 5rem;
+            border-radius: 100%;
+
+        }
+        .slideContentInner{
+            display: none;
+        }
+        .slideTitle{
+            opacity: 0;
+        }
+
+        .slideContent {
+            width: 7rem;
+            height: 4rem;
         }
 
     }
-    @media (min-aspect-ratio: 16/9){
-        .videoBCG{
-            width: 100%;
-            height: auto;
-        }
-        
-    }
+
 
 `

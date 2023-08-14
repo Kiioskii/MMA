@@ -8,7 +8,7 @@ const Footer = () =>{
             <div className="left side">
                 <div>
                     <h1>Kontakt:</h1>
-                    <p>Email: contact@aspinaweb.com</p>
+                    <p>Email: contact@aspinatech.com</p>
                     <p>Nr. kontaktowy: +48 792 727 370</p>
                 </div>
             </div>
